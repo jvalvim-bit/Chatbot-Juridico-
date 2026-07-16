@@ -1,0 +1,41 @@
+# Dependências e artefatos
+node_modules/
+coverage/
+dist/
+build/
+*.log
+
+# Segredos e configurações locais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Sessões, bancos e dados operacionais
+.wwebjs_auth/
+.wwebjs_cache/
+sessions/
+data/
+uploads/
+documents/
+documentos/
+*.sqlite
+*.sqlite3
+*.db
+
+# Sistema e editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Electron e empacotadores
+release/
+out/
+*.exe
+*.msi
+*.AppImage
+*.asar

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Demonstração sanitizada de painel para chatbot jurídico."
+    />
+    <title>Chatbot Jurídico Electron — Painel demonstrativo</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" type="module"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <img src="/assets/fonseca-logo.png" alt="Fonseca & Macedo" />
+          <div>
+            <strong>Chatbot Jurídico</strong>
+            <span>Electron Showcase</span>
+          </div>
+        </div>
+
+        <nav aria-label="Navegação principal">
+          <a class="nav-item active" href="#visao-geral" aria-current="page">
+            <span class="nav-icon">⌂</span> Visão geral
+          </a>
+          <a class="nav-item" href="#atendimentos">
+            <span class="nav-icon">◌</span> Atendimentos
+          </a>
+          <a class="nav-item" href="#simulador">
+            <span class="nav-icon">◇</span> Simulador
+          </a>
+          <a class="nav-item" href="#arquitetura">
+            <span class="nav-icon">▦</span> Arquitetura
+          </a>
+        </nav>
+
+        <div class="sidebar-status">
+          <span class="status-dot"></span>
+          <div>
+            <strong>Modo demonstração</strong>
+            <small>Sem serviços externos</small>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <header class="topbar" id="visao-geral">
+          <div>
+            <p class="eyebrow">PAINEL OPERACIONAL</p>
+            <h1>Boa tarde, equipe.</h1>
+            <p>Acompanhe o fluxo fictício de atendimento em um só lugar.</p>
+          </div>
+          <div class="topbar-actions">
+            <span class="live-pill"><span></span> sistema local</span>
+            <button
+              class="avatar"
+              type="button"
+              aria-label="Perfil demonstrativo"
+            >
+              FM
+            </button>
+          </div>
+        </header>
+
+        <section class="demo-banner" role="note">
+          <strong>Ambiente sanitizado</strong>
+          <span id="demo-notice">Carregando dados demonstrativos…</span>
+        </section>
+
+        <section
+          class="metrics-grid"
+          id="metrics"
+          aria-label="Métricas"
+        ></section>
+
+        <section class="content-grid" id="atendimentos">
+          <article class="panel queue-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">FILA ATUAL</p>
+                <h2>Atendimentos recentes</h2>
+              </div>
+              <span class="count-badge" id="queue-count">0 itens</span>
+            </div>
+            <div class="queue-list" id="queue-list"></div>
+          </article>
+
+          <article class="panel activity-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">ATIVIDADE</p>
+                <h2>Últimos eventos</h2>
+              </div>
+            </div>
+            <ol class="timeline" id="activity-list"></ol>
+          </article>
+        </section>
+
+        <section class="lower-grid">
+          <article class="panel simulator" id="simulador">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">FLOWGUARD</p>
+                <h2>Simulador de conversa</h2>
+                <p>Teste o fluxo reduzido sem WhatsApp, IA ou dados reais.</p>
+              </div>
+              <span class="state-badge" id="conversation-state"
+                >menu_principal</span
+              >
+            </div>
+            <div class="chat-window" id="chat-window" aria-live="polite">
+              <div class="message bot-message">
+                Olá! Envie uma mensagem ou escolha 1, 2, 3 ou 0.
+              </div>
+            </div>
+            <form class="chat-form" id="chat-form">
+              <label class="sr-only" for="chat-message"
+                >Mensagem fictícia</label
+              >
+              <input
+                id="chat-message"
+                name="message"
+                maxlength="1000"
+                placeholder="Digite uma mensagem fictícia…"
+                autocomplete="off"
+                required
+              />
+              <button type="submit">Enviar</button>
+            </form>
+          </article>
+
+          <article class="panel architecture" id="arquitetura">
+            <p class="eyebrow">ARQUITETURA PÚBLICA</p>
+            <h2>Feita para demonstrar, não operar</h2>
+            <p>
+              A edição pública preserva conceitos de produto e segurança, mas
+              remove sessões, documentos, credenciais, integrações e regras
+              proprietárias.
+            </p>
+            <ul>
+              <li><span>01</span> Painel estático responsivo</li>
+              <li><span>02</span> API local com validação e rate limit</li>
+              <li><span>03</span> Fluxo determinístico testável</li>
+              <li><span>04</span> Dados 100% simulados</li>
+            </ul>
+          </article>
+        </section>
+
+        <footer>
+          Showcase técnico • nenhum atendimento, documento ou credencial real
+          está presente.
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

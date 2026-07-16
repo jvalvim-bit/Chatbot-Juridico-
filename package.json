@@ -1,0 +1,37 @@
+{
+  "name": "chatbot-juridico-electron",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Showcase sanitizado de um chatbot jurídico Electron com painel web.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "lint": "eslint .",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "security:secrets": "node scripts/check-secrets.mjs",
+    "security:audit": "npm audit --audit-level=high",
+    "check": "npm run lint && npm run format:check && npm test && npm run security:secrets && npm run security:audit"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "dependencies": {
+    "cors": "2.8.6",
+    "dotenv": "17.4.2",
+    "express": "5.2.1",
+    "express-rate-limit": "8.6.0",
+    "helmet": "8.3.0",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "eslint": "10.7.0",
+    "globals": "17.7.0",
+    "prettier": "3.9.5",
+    "supertest": "7.2.2"
+  },
+  "license": "UNLICENSED"
+}
