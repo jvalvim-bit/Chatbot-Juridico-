@@ -1,12 +1,14 @@
 # Chatbot Jurídico Electron
 
-[![CI](https://github.com/jvalvim-bit/chatbot-juridico-electron/actions/workflows/ci.yml/badge.svg)](https://github.com/jvalvim-bit/chatbot-juridico-electron/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/jvalvim-bit/chatbot-juridico-electron/actions/workflows/codeql.yml/badge.svg)](https://github.com/jvalvim-bit/chatbot-juridico-electron/actions/workflows/codeql.yml)
+<img width="1325" height="846" alt="image" src="https://github.com/user-attachments/assets/e6ac253b-6355-413c-9ce2-b122428f7925" />
+
 
 Demonstração pública e sanitizada da arquitetura de um chatbot jurídico com
 painel web. O repositório preserva a proposta visual e alguns padrões de fluxo,
 mas foi reconstruído para **não conter operação real, dados pessoais, documentos,
 credenciais, sessões, chaves de API ou regras internas completas**.
+
+
 
 > **Importante:** este projeto é um showcase técnico. Ele não presta orientação
 > jurídica, não atende clientes e não deve ser usado em produção.
