@@ -1,6 +1,7 @@
 # Chatbot Jurídico Electron
 
-<img width="1325" height="846" alt="image" src="https://github.com/user-attachments/assets/e6ac253b-6355-413c-9ce2-b122428f7925" />
+<img width="1706" height="922" alt="645c00e4-357c-4207-bfea-9435ee0e158e" src="https://github.com/user-attachments/assets/ff34a1ab-202c-4d6a-bc08-2d179987b354" />
+
 
 
 Demonstração pública e sanitizada da arquitetura de um chatbot jurídico com
